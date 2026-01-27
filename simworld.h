@@ -1776,7 +1776,7 @@ public:
 	 * Creates a map from a heightfield.
 	 * @param sets game settings.
 	 */
-	void load_heightfield(settings_t *sets, bool is_new_map);
+	void load_heightfield(settings_t *sets);
 
 	/**
 	 * Stops simulation and optionally closes the game.
