@@ -45,7 +45,8 @@ private:
 	gui_label_buf_t map_number_label;
 
 	button_t
-		start_button;
+		start_button,
+		open_climate_gui;
 
 	gui_label_buf_t
 		size_label; // memory requirement
