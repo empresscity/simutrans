@@ -2006,7 +2006,7 @@ void win_display_flush(double konto)
 	const uint16 divisor = wl->get_settings().get_spacing_shift_divisor();
 	const float month_ratio = (float)(wl->get_ticks()%wl->ticks_per_world_month)/wl->ticks_per_world_month;
 	sprintf(spacing_shift_str, "%d/%d", (uint16)(month_ratio*divisor), divisor);
-	display_proportional_rgb(80+w_left, status_bar_text_y, spacing_shift_str, ALIGN_LEFT, SYSCOL_STATUSBAR_TEXT, true);
+	display_proportional_rgb((env_t::fontsize*4+32)+w_left, status_bar_text_y, spacing_shift_str, ALIGN_LEFT, SYSCOL_STATUSBAR_TEXT, true);
 
 	char convert_spacing_shift_str[10];
 	const uint16 month_ratio_second = 86400/divisor;
